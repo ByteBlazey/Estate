@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Vampish-Estate</title>
+</head>
+<body>
+  <nav>
+        <ul class="sidebar">
+            <div onclick="hidesidebar()"><a href="" class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></div>
+            <li><a href="">Home</a></li>
+            <li><a href="">Agent</a></li>
+            <li><a href="">F.A.Q.</a></li>
+            <li><a href="">Properties</a></li>
+            <li><a href="">Contact/Help</a></li>
+        </ul>
+        <ul class="nav-links">
+            <li><a href=""><img src="logo.png" alt="OOU"></a></li>
+            <li class="hide"><a href="">Home</a></li>
+            <li class="hide"><a href="">Agent</a></li>
+            <li class="hide"><a href="">F.A.Q.</a></li>
+            <li class="hide"><a href="">Properties</a></li>
+            <li class="hide"><a href="">Contact/Help</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex ';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+     <main>
+     <section class="bg-cover bg-center min-h-[90vh]" style="background-image: linear-gradient(
+  rgba(0, 0, 0, 0.3), 
+  rgba(0, 0, 0, 0.3)
+), url('bg1.jpg');">
+  <div class="container h-full">
+    <div class="flex flex-col">
+      <div class="text-white mt-[5rem] max-w-[800px]" style="margin-top: 7rem;">
+        <p class="text-5xl sm:text-6xl md:text-7xl" style="margin-bottom: 2rem; color: gold;">𝙑𝙖𝙢𝙥𝙞𝙨𝙝-𝙀𝙨𝙩𝙖𝙩𝙚</p>
+        <p class="text-5xl sm:text-6xl md:text-7xl" style="margin-bottom: 1rem; color: gold;">𝙀𝙡𝙚𝙜𝙖𝙣𝙘𝙚 𝘼𝙩 𝙋𝙚𝙖𝙠</p>
+        <p class="text-lg sm:text-xl">Welcome to Vampish Estate Where elegance meets opportunity. Discover premium properties tailored for comfort, style, and lasting value. Your dream home is just a step away.</p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center mt-4 p-4 rounded-full shadow-lg max-w-[600px] h-[70px] mx-auto" style="place-content: center; margin: auto; background: rgba(255, 255, 255, 0.2); margin-top: 4rem;">
+        <form action="" class="flex justify-between p-[10px] w-full bg-transparent" style="margin-left: 1rem;">
+          <input type="text" placeholder="Search for properties..." class="search-input w-full max-w-xl mr-2  bg-transparent flex border-0 outline-0 p-3 text-lg text-white">
+          <button type="submit" class="search-button w-full max-w-[150px]">Search</button>
+        </form>
+    </div>
+  </div>
+</section>
+
+<section class="flex justify-center items-center py-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 max-w-full gap-y-6">
+    <!-- Top left: image -->
+    <div class="h-full">
+      <img src="img1.png" alt="Student Group" class="w-full h-full object-cover" />
+    </div>
+    <!-- Top right: text card -->
+    <div class="flex flex-col justify-center items-center bg-[#23235b] text-white p-8 h-full">
+      <h3 class="text-2xl font-bold mb-2">Why Choose Us?</h3>
+      <p class="mb-4 text-lg">At Vampish Estate, we pride ourselves on offering a seamless property search experience. Our agents are dedicated to helping you find the perfect home, whether you are buying, selling, or renting. Explore a wide range of premium listings tailored to your needs.</p>
+      <ul class="list-disc pl-5 text-left">
+        <li>Trusted local experts</li>
+        <li>Personalized property recommendations</li>
+        <li>Transparent pricing and support</li>
+      </ul>
+    </div>
+    <!-- Bottom left: image -->
+    <div class="h-full">
+      <img src="img2.png" alt="Students" class="w-full h-full object-cover" />
+    </div>
+    <!-- Bottom right: text card -->
+    <div class="flex flex-col justify-center items-center bg-[#23235b] text-white p-8 h-full">
+      <h3 class="text-2xl font-bold mb-2">Our Promise</h3>
+      <p class="mb-4 text-lg">We believe your dream home should be within reach. Vampish Estate guarantees a smooth transaction process, expert guidance, and ongoing support. Let us help you unlock the door to your future.</p>
+      <ul class="list-disc pl-5 text-left">
+        <li>Comprehensive property listings</li>
+        <li>Professional negotiation and closing</li>
+        <li>After-sale customer care</li>
+      </ul>
+    </div>
+    
+  </div>
+  </section>
+
+  <article class="my-20 flex justify-center items-center" style="margin-top: 5rem;">
+  <div class="container flex justify-center items-center py-8 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 w-full max-w-6xl md:gap-20" style="margin-left: 2rem;">
+      
+      <a href="">
+        <div class="max-w-[400px] mx-auto" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <img src="es1.jpeg" alt="" class="h-[200px] w-full object-cover rounded-lg mb-2">
+        <p class="font-bold text-lg">₦700,000,000</p>
+        <p>5bds 4ba 3,651sqft Active</p>
+        <p>Lagos</p>
+        <p>19A, Alh. Babatunde Jose Street, Victoria Island</p>
+      </div>
+      </a>
+      
+      <a href="">
+        <div class="max-w-[400px] mx-auto" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <img src="es2.jpeg" alt="" class="h-[200px] w-full object-cover rounded-lg mb-2">
+        <p class="font-bold text-lg">₦1,200,000,000</p>
+        <p>6bds 5ba 4,510sqft Active</p>
+        <p>Enugu</p>
+        <p>2 Atani Street, Abakpa Nike</p>
+      </div>
+      </a>
+
+      <a href="">
+        <div class="max-w-[400px] mx-auto" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <img src="es3.jpeg" alt="" class="h-[200px] w-full object-cover rounded-lg mb-2">
+        <p class="font-bold text-lg">₦800,000,000</p>
+        <p>3bds 2ba 3,710sqft Active</p>
+        <p>Lagos</p>
+        <p>Oregun Ind. Est., Oregun</p>
+      </div>
+      </a>
+
+      <a href="">
+        <div class="max-w-[400px] mx-auto" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <img src="es4.jpg" alt="" class="h-[200px] w-full object-cover rounded-lg mb-2">
+        <p class="font-bold text-lg">₦2,000,000,000</p>
+        <p>7bds 7ba 8,900sqft Active</p>
+        <p>P/H. Rivers</p>
+        <p>T/Amadi Ind. L/O., Box 573</p>
+      </div>
+      </a>
+
+      <a href="">
+        <div class="max-w-[400px] mx-auto" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <img src="es5.jpg" alt="" class="h-[200px] w-full object-cover rounded-lg mb-2">
+        <p class="font-bold text-lg">₦1,200,000,000</p>
+        <p>5bds 6ba 4,900sqft Active</p>
+        <p>Benin City</p>
+        <p>197, Isoleko Road, Egor573</p>
+      </div>
+      </a>
+
+      <a href="">
+        <div class="max-w-[400px] mx-auto" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <img src="es6.jpeg" alt="" class="h-[200px] w-full object-cover rounded-lg mb-2">
+        <p class="font-bold text-lg">₦700,000,000</p>
+        <p>3bds 2ba 3,100sqft Active</p>
+        <p>Lagos Island</p>
+        <p>72 Nnamdi Azikiwe Street</p>
+      </div>
+      </a>
+
+    </div>
+  </div>
+  </article>
+
+<div class="flex justify-center items-center w-full">
+  <button class="px-16 py-2 bg-[#23235b] text-white shadow-lg my-8" style="padding: 0.5rem 2rem; margin-top: 2rem;">
+    LOAD MORE
+  </button>
+</div>
+
+<div class="flex justify-center items-center w-full" style="margin-top: 1rem;">
+  <p class="text-2xl font-bold">Explore All Cities</p>
+</div>
+
+<section class="flex justify-center items-center w-full">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-20">
+
+    <a href="" class="n">
+      <div class=" x flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(ibd.jpeg); width: 350px; height: 300px; background-repeat: no-repeat; background-position: center">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">IBADAN</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Lag.jpg); width: 350px; height: 300px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">LAGOS</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Benin.jpeg); width: 350px; height: 300px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">BENIN</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(ogun.jpeg); width: 350px; height: 250px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">OGUN</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Abj.jpeg); width: 350px; height: 250px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">ABUJA</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(riv.jpeg); width: 350px; height: 250px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">RIVER-STATE</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(kaduna.jpeg); width: 350px; height: 250px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">KADUNA</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(ph.jpeg); width: 350px; height: 250px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">PORTHACOURT</p>
+    </div>
+    </a>
+
+    <a href="" class="n">
+      <div class="flex items-center justify-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(osun.jpeg); width: 350px; height: 250px; background-repeat: no-repeat; background-position: center;">
+      <p class="text-white text-2xl font-bold bg-opacity-40 px-4 py-2 rounded md:text-4xl">OSUN</p>
+    </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="flex justify-center items-center w-full">
+  <button class="px-16 py-2 bg-[#23235b] text-white shadow-lg my-8" style="padding: 0.5rem 2rem; margin-top: 2rem;">
+    LOAD MORE
+  </button>
+</div>
+  </main>
+</body>
+
+<footer class="bg-[#23235b] text-white py-8 mt-12" style="margin-top: 3rem;">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+    <div class="mb-4 md:mb-0 gap-6">
+      <p class="font-bold text-lg">Vampish Estate</p>
+      <p class="text-sm">© 2025 Vampish Estate. All rights reserved.</p>
+    </div>
+    <div class="flex space-x-6 gap-6">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">Agent</a>
+      <a href="#" class="hover:underline">Properties</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </div>
+    <div class="mt-4 md:mt-0 flex space-x-4 gap-6">
+      <a href="#" aria-label="Facebook" class="hover:text-gold">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .594 0 1.326v21.348C0 23.406.595 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .594 23.406 0 22.675 0"></path></svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="hover:text-gold">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.555-2.005.959-3.127 1.184A4.916 4.916 0 0016.616 3c-2.717 0-4.92 2.206-4.92 4.917 0 .386.044.762.127 1.124C7.728 8.77 4.1 6.797 1.671 3.149c-.423.724-.666 1.562-.666 2.475 0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.627 1.956 2.444 3.377 4.6 3.418A9.867 9.867 0 010 21.543a13.94 13.94 0 007.548 2.212c9.058 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636A10.025 10.025 0 0024 4.557z"></path></svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="hover:text-gold">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.309.975.975 1.247 2.242 1.309 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.309 3.608-.975.975-2.242 1.247-3.608 1.309-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.309-.975-.975-1.247-2.242-1.309-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.309-3.608C4.517 2.567 5.784 2.295 7.15 2.233 8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.392 3.678 1.373c-.981.981-1.242 2.093-1.301 3.374C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.613.059 1.281.32 2.393 1.301 3.374.981.981 2.093 1.242 3.374 1.301C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.32 3.374-1.301.981-.981 1.242-2.093 1.301-3.374.059-1.281.072-1.69.072-7.613 0-5.923-.013-6.332-.072-7.613-.059-1.281-.32-2.393-1.301-3.374-.981-.981-2.093-1.242-3.374-1.301C15.668.013 15.259 0 12 0zm0 5.838A6.162 6.162 0 005.838 12 6.162 6.162 0 0012 18.162 6.162 6.162 0 0018.162 12 6.162 6.162 0 0012 5.838zm0 10.324A4.162 4.162 0 017.838 12 4.162 4.162 0 0112 7.838 4.162 4.162 0 0116.162 12 4.162 4.162 0 0112 16.162zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"></path></svg>
+      </a>
+    </div>
+
+    <br>
+
+</html>
